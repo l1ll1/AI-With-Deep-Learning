@@ -109,8 +109,9 @@ The `sacct` commands really only make sense after the job is completed
 
 ---
 
-<div>
-<div class='left' style='float:left;width:48%'>
+::: columns
+
+:::: column
 
 ### Resources on M3
 
@@ -125,8 +126,11 @@ The `sacct` commands really only make sense after the job is completed
 #SBATCH --partition=desktop
 #SBATCH --qos=desktopq
 ```
-</div>
-<div class='right' style='float:right;width:48%'>
+
+::::
+
+:::: column
+
 ### Resources on CVL@UWA
 
 ```
@@ -141,8 +145,10 @@ The `sacct` commands really only make sense after the job is completed
 
 
 ```
-</div>
-</div>
+
+::::
+
+:::
 
 Different clusters specify their resources in slightly different ways.
 
@@ -339,7 +345,7 @@ Compare CPU and GPU usage
 
 ## Performance
 
-![GPU utilisation](util.png)
+![GPU utilisation](util.png){ height=5em }
 
 * The GPU utilisation never goes over 50%
 * There are two clear phases

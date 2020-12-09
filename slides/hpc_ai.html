@@ -112,8 +112,8 @@ sacct --format=User,JobID,Jobname,partition,state,time,start,end,elapsed,MaxRss,
 </div>
 <div class="slide section level2">
 
-<div>
-<div class="left" style="float:left;width:48%">
+<div class="columns">
+<div class="column">
 <h3 id="resources-on-m3">Resources on M3</h3>
 <pre><code>#SBATCH --job-name=pytorch 
 #SBATCH --account=vf86
@@ -124,8 +124,7 @@ sacct --format=User,JobID,Jobname,partition,state,time,start,end,elapsed,MaxRss,
 #SBATCH --mem=55G 
 #SBATCH --partition=desktop
 #SBATCH --qos=desktopq</code></pre>
-</div>
-<div class="right" style="float:right;width:48%">
+</div><div class="column">
 <h3 id="resources-on-cvluwa">Resources on CVL@UWA</h3>
 <pre><code>#SBATCH --job-name=pytorch
 #SBATCH --account=vf86
@@ -284,7 +283,7 @@ cat slurm-&lt;jobnumber&gt;.out</code></pre>
 <div id="performance" class="slide section level2">
 <h1>Performance</h1>
 <div class="figure">
-<img src="util.png" alt="GPU utilisation" />
+<img src="util.png" alt="GPU utilisation" style="height:5em" />
 <p class="caption">GPU utilisation</p>
 </div>
 <ul>
